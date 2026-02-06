@@ -182,7 +182,15 @@ header .right{margin-left:auto;text-align:right;font-size:13px;color:var(--muted
     padding: 10px; border-radius: 8px;
     border-left: 3px solid var(--accent); margin-bottom: 10px;
 }
-.gb-msg { font-size: 13px; color: #eaf5ff; line-height: 1.4; font-style: italic;}
+.gb-msg { 
+    font-size: 13px; 
+    color: #eaf5ff; 
+    line-height: 1.4; 
+    font-style: italic;
+    white-space: pre-wrap;  
+    word-wrap: break-word;  
+}
+
 .gb-date { font-size: 10px; color: var(--muted); text-align: right; margin-top: 4px; }
 
 </style>
@@ -585,7 +593,7 @@ header .right{margin-left:auto;text-align:right;font-size:13px;color:var(--muted
                   <option value="Other">🏳other</option>
               </select>
 
-              <textarea id="gb-msg" class="gb-input" rows="3" placeholder="Write your message here..." maxlength="150"></textarea>
+              <textarea id="gb-msg" class="gb-input" rows="3" placeholder="Write your message here..." maxlength="1000"></textarea>
               
               <button class="btn neon" id="btn-kirim">send message 🚀</button>
           </div>
