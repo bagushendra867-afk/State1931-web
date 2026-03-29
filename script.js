@@ -11,7 +11,7 @@ window.renderMap = function(list, containerId, prefix, type) {
         let cssClass = "ally"; 
         let textTag = tag ? tag.toUpperCase() : "[???]"; 
         
-        if (textTag.includes("GRD")) { cssClass = "grd"; }
+        if (textTag.includes("KPK")) { cssClass = "grd"; }
         else if (textTag.includes("VLN")) { cssClass = "vln"; }
         else if (textTag.includes("BEE")) { cssClass = "bee"; }
         else if (textTag.includes("TUR")) { cssClass = "tur"; }
@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', () => {
             let targetId = '';
             // Deteksi aliansi mana yang dipencet
             if(el.classList.contains('kor')) targetId = 'kor-panel';
-            if(el.classList.contains('grd')) targetId = 'grd-panel';
+            if(el.classList.contains('kpk')) targetId = 'grd-panel';
             if(el.classList.contains('bee')) targetId = 'bee-panel';
             if(el.classList.contains('tur')) targetId = 'tur-panel';
             if(el.classList.contains('wbe')) targetId = 'wbe-panel';
